@@ -23,7 +23,7 @@ const TransactionForm = () => {
           type="text"
           placeholder="Enter a description"
           onChange={(e) => setDescription(e.target.value)}
-          className="bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full"
+          className="bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full my-2"
           value={description}
         />
         <input
@@ -31,10 +31,10 @@ const TransactionForm = () => {
           step="0.01"
           placeholder="0.00"
           onChange={(e) => setAmount(e.target.value)}
-          className="bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full"
+          className="bg-zinc-600 text-white px-3 py-2 rounded-lg block mb-2 w-full my-2"
           value={amount}
         />
-        <button className="bg-indigo-500 text-white px-3 py-2 rounded-lg blobk mb-2 w-full ">Add transaction</button>
+        <button className="bg-indigo-500 text-white px-3 py-2 rounded-lg blobk mb-2 w-full my-2 ">Add transaction</button>
       </form>
     </div>
   );
