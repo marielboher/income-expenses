@@ -1,0 +1,44 @@
+
+.navbar-tracker {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    gap: 30px;
+    font-family: 'Poppins', sans-serif;
+    height: 70px;
+    padding-right: 120px;
+    padding-top: 20px;
+  }
+  
+  .navbar-tracker li {
+    list-style: none;
+    text-transform: uppercase;
+  }
+  
+  .navbar-tracker li a {
+    text-decoration: none;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px;
+  }
+  
+  .btn-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto; 
+    padding-right: 50px;
+  }
+  
+  .nav-tracker{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-nav{
+    width: 25px;
+    height: 25px;
+    transition: .2s linear;
+    color: #ffff;
+  }

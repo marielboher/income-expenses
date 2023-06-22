@@ -1,6 +1,129 @@
-.cont-history{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
+
+.container-all {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.container-app {
+  overflow-x: hidden;
+  background-image: url('./assets/multimedia/bg-gradient.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.income-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 600px;
+  border-radius: 10px;
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(145deg, transparent 40%, #e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #ffff;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ece5e5;
+  padding: 70px;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(145deg, transparent 40%, #e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  font-size: 14px;
+  font-family: inherit;
+  color: #ffff;
+}
+
+.history{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+
+ @media (max-width: 1200px) {
+
+  .container-cards{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+    .container-app {
+      height: auto;
+    }
+    .container-all {
+      flex-direction: column;
+      align-items: center;
+    }
+    .chart-container {
+      margin-top: 30px; 
+      margin-bottom: 20px;
+    } 
+    .container-app h2 {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container-all {
+      flex-direction: column;
+      align-items: center;
+    }
+    .income-container{
+        width: 40vh;
+    }
+    .chart-container{
+        width: 40vh;
+    }
+}
+@media (max-width: 600px) {
+    .container-all {
+      flex-direction: column;
+      align-items: center;
+    }
+    .income-container{
+        width: 30vh;
+    }
+    .chart-container{
+        width: 30vh;
+    }
+} 

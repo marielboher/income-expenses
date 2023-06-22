@@ -1,0 +1,36 @@
+.income-styles{
+    background-color: #2c2656;
+    width: 160px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.income-styles h4{
+    font-size: 20px;
+    font-weight: 700;
+    color: #BC6FF1;
+}
+
+.expense-styles{
+    background-color: #2c2656;
+    width: 160px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.expense-styles h4{
+    font-size: 20px;
+    font-weight: 700;
+    color:#BC6FF1;
+}

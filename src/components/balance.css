@@ -1,0 +1,13 @@
+.balance{
+    padding: 20px;
+    font-size: 19px;
+}
+
+.balance h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.balance h1{
+    text-align: center;
+}

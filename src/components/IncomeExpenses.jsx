@@ -1,4 +1,6 @@
+import React from "react";
 import { useGlobalState } from "../context/GlobalState";
+import "./incomeExpenses.css";
 
 const IncomeExpenses = () => {
   const { transactions } = useGlobalState();
@@ -6,24 +8,24 @@ const IncomeExpenses = () => {
   const amounts = transactions.map((transaction) => transaction.amount);
 
   const income = amounts
-    .filter((item) => item + 0)
+    .filter((item) => item > 0)
     .reduce((acc, item) => (acc += item), 0)
     .toFixed(2);
 
   const expense = amounts
     .filter((item) => item < 0)
     .reduce((acc, item) => (acc += item), 0)
-    .toFixed(2) * -1;
+    .toFixed(2);
 
   return (
     <>
-      <div className="flex justify-between my-2 p-3 bg-zinc-100 text-black rounded-md">
-        <h4>Income:</h4>
-        <p>${income}</p>
+      <div className="income-styles">
+        <h4>Income: </h4>
+        <p>${Math.abs(income)}</p>
       </div>
-      <div  className="flex justify-between my-2 p-3  bg-zinc-100 text-black rounded-md">
-        <h4>Expense:</h4>
-        <p>${expense}</p>
+      <div className="expense-styles">
+        <h4>Expense: </h4>
+        <p>${Math.abs(expense)}</p>
       </div>
     </>
   );

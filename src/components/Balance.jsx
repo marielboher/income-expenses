@@ -1,4 +1,5 @@
 import { useGlobalState } from "../context/GlobalState";
+import "./balance.css";
 
 const Balance = () => {
   const { transactions } = useGlobalState();
@@ -8,9 +9,9 @@ const Balance = () => {
   const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
 
   return (
-    <div className="flex flex-col justify-between p-4">
+    <div className="balance">
       <h3>Your Balance:</h3>
-      <h1 className="text-2xl font-bold pt-3">${total}</h1>
+      <h1>${total}</h1>
     </div>
   );
 };

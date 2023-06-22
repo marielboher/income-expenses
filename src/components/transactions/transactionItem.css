@@ -1,0 +1,15 @@
+.container-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.listado{
+    background-color: #2c2656;
+    width: 150px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,79 @@
+.img-incomes {
+    height: 150px;
+    border-radius: 10%;
+}
+
+.container-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputs {
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color:  #1B2430;
+}
+.container-inc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.container-inc h1{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.container-inc p{
+    color: white;
+    font-size: 20px;
+}
+
+.button-add {
+    --color: #BC6FF1;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  .button-add::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+  .button-add:hover {
+    color: white;
+  }
+  
+  .button-add:before {
+    top: 100%;
+    left: 100%;
+    transition: .3s all;
+  }
+  
+  .button-add:hover::before {
+    top: -30px;
+    left: -30px;
+  }
