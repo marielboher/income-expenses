@@ -7,12 +7,12 @@
 
 .container-all {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
-  padding: 10px;
-  width: 100%;
-  height: auto;
+  justify-content: space-around;
+  gap: 50px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  padding: 20px;
 }
 
 .container-app {
@@ -31,7 +31,9 @@
   align-items: center;
   justify-content: space-around;
   gap: 50px;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+  padding: 20px;
 }
 
 .income-container {
@@ -58,8 +60,8 @@
   justify-content: center;
   background-color: #ece5e5;
   padding: 70px;
-  width: auto;
-  height: auto;
+  width: 450px;
+  height: 600px;
   border-radius: 10px;
   background: linear-gradient(#212121, #212121) padding-box,
     linear-gradient(145deg, transparent 40%, #e81cff, #40c9ff) border-box;
@@ -69,7 +71,7 @@
   color: #ffff;
 }
 
-.history{
+.history {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -79,51 +81,59 @@
 
 
 
- @media (max-width: 1200px) {
+@media (max-width: 900px) {
 
-  .container-cards{
+  .container-cards {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 50px;
   }
-    .container-app {
-      height: auto;
-    }
-    .container-all {
-      flex-direction: column;
-      align-items: center;
-    }
-    .chart-container {
-      margin-top: 30px; 
-      margin-bottom: 20px;
-    } 
-    .container-app h2 {
-        padding-top: 50px;
-    }
+
+  .container-app {
+    height: auto;
+  }
+
+  .container-all {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart-container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .container-app h2 {
+    padding-top: 50px;
+  }
 }
 
-@media (max-width: 700px) {
-    .container-all {
-      flex-direction: column;
-      align-items: center;
-    }
-    .income-container{
-        width: 40vh;
-    }
-    .chart-container{
-        width: 40vh;
-    }
+@media (max-width: 550px) {
+  .container-all {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .income-container {
+    width: 30vh;
+    height: auto;
+  }
+
+  .chart-container {
+    width: 30vh;
+    height: auto;
+  }
 }
-@media (max-width: 600px) {
-    .container-all {
-      flex-direction: column;
-      align-items: center;
-    }
-    .income-container{
-        width: 30vh;
-    }
-    .chart-container{
-        width: 30vh;
-    }
-} 
+
+@media (max-width: 420px) {
+  .income-container {
+    width: 25vh;
+    height: auto;
+  }
+
+  .chart-container {
+    width: 25vh;
+    height: auto;
+  }
+}

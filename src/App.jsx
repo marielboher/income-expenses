@@ -20,11 +20,11 @@ const App = () => {
             <IncomeExpenses />
             <div className="history">
               <Balance />
-              <TransactionList />
             </div>
           </div>
           </div>
         <div className="container-all">
+              <TransactionList />
           <div className="chart-container">
             <div className="chart">
               <ExpenseChart />
